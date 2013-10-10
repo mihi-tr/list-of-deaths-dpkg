@@ -1,0 +1,29 @@
+{
+  "name":"list-of-deaths-1993-2012",
+  "title":"List of deaths of refugees in europe and on europes borders",
+  "description":"http://www.unitedagainstracism.org released a list of people who died as refugees/asylum seekers in Europe and on it's borders. This is a scraped version",
+  "resources":[{
+   "path":"data/listofdeath.csv",
+   "schema": {
+      "fields": [
+        {"id":"date",
+         "type":"date",
+         "format":"dd/mm/yy"},
+        {"id":"count",
+         "type":"number"},
+        {"id":"name",
+         "type":"string"},
+        {"id":"origin",
+         "type":"string"},
+        {"id":"cause of death",
+         "type":"string"},
+        {"id":"source",
+         "type":"string"}
+        ]
+    }
+  }],
+  "sources": [{
+      "name": "United Against Racism",
+      "web": "http://www.unitedagainstracism.org/pdfs/listofdeaths.pdf"
+            }]
+}
